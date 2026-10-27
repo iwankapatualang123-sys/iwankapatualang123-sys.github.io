@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurniawan — Internal Systems Developer</title>
+<meta name="description" content="Business operations and internal systems developer. 10 business apps shipped for a three-branch café group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14213D; --text:#1E293B; --muted:#475569; --bg:#FFFFFF; --soft:#F1F5F9;
+  --line:#E2E8F0; --accent:#0F766E; --accent-light:#5EEAD4; --hero:#14213D;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#F1F5F9; --text:#E2E8F0; --muted:#94A3B8; --bg:#0B1220; --soft:#131C2E;
+    --line:#1F2A3F; --accent:#2DD4BF; --hero:#0E1830;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--hero);color:#fff;padding:64px 0 48px}
+header h1{margin:0;font-size:clamp(36px,6vw,56px);line-height:1.05;font-weight:800;letter-spacing:-1px}
+header .role{margin:10px 0 0;font-size:18px;font-weight:600;color:var(--accent-light)}
+header p.lead{max-width:640px;margin:18px 0 0;color:#CBD5E1;font-size:16px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none}
+.btn.primary{background:#2DD4BF;color:#0B1220}
+.btn.ghost{border:1px solid #3B4D75;color:#fff}
+section{padding:52px 0}
+h2{margin:0 0 22px;font-size:13px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.stat{background:var(--soft);border-radius:12px;padding:18px 20px}
+.stat b{display:block;font-size:28px;font-weight:800;color:var(--accent);line-height:1.15}
+.stat span{font-size:14px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:17px;color:var(--ink)}
+.card p{margin:0;font-size:14.5px;color:var(--text)}
+.card .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:600;color:var(--muted)}
+.note{margin-top:16px;font-size:14px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--soft);border-radius:6px;padding:6px 10px;font-size:13.5px;font-weight:600;color:var(--ink)}
+.stack{display:grid;gap:18px}
+.stack h3{margin:0 0 8px;font-size:15px;color:var(--ink)}
+blockquote{margin:0;border-left:4px solid var(--accent);background:var(--soft);padding:20px 24px;border-radius:0 12px 12px 0}
+blockquote p{margin:0;font-size:19px;font-style:italic;color:var(--ink)}
+blockquote cite{display:block;margin-top:8px;font-style:normal;font-size:14px;font-weight:600;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;font-size:14px;color:var(--muted)}
+.alt{background:var(--soft)}
+.alt .stat,.alt .chip{background:var(--bg)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Kurniawan</h1>
+    <p class="role">Business Operations &amp; Internal Systems Developer</p>
+    <p class="lead">I run a three-branch café group in Malang, Indonesia, and build the software that runs it: attendance, payroll, KPIs, POS, inventory and cash flow. I deploy and maintain it on my own Linux servers.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:iwan.kapatualang123@gmail.com">Email me</a>
+      <a class="btn ghost" href="#projects">See projects</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Impact</h2>
+    <div class="stats">
+      <div class="stat"><b>60 staff</b><span>across 3 branches on one multi-user HR &amp; payroll system</span></div>
+      <div class="stat"><b>3 days → 3 hrs</b><span>payroll processing time</span></div>
+      <div class="stat"><b>2 days → 3 hrs</b><span>net profit reporting, per branch</span></div>
+      <div class="stat"><b>5+ months</b><span>in daily production use</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <h2>Projects shipped</h2>
+    <div class="projects">
+      <div class="card"><h3>Elio DigiHub</h3><p>HR hub for attendance, payroll, KPIs, digital signatures and a SuperAdmin dashboard.</p><span class="tag">React · TypeScript · Supabase</span></div>
+      <div class="card"><h3>Attendance Engine (24h)</h3><p>Turns fingerprint data into shifts with cross-day pairing and overtime rounding.</p><span class="tag">TypeScript · business logic</span></div>
+      <div class="card"><h3>Overflow POS</h3><p>Point-of-sale system built to handle 200+ transactions per day.</p><span class="tag">Web app · retail</span></div>
+      <div class="card"><h3>Warehouse Elio</h3><p>Stock and inventory tracking for café supplies.</p><span class="tag">Web app · inventory</span></div>
+      <div class="card"><h3>Elio HPP Calculator</h3><p>Menu cost (HPP) and pricing tool, self-hosted on aaPanel.</p><span class="tag">Web app · finance</span></div>
+      <div class="card"><h3>Elio CashFlow</h3><p>Automatic net profit per branch, from 2 days to 3 hours.</p><span class="tag">Web app · finance</span></div>
+      <div class="card"><h3>Internal Performance</h3><p>Staff performance and KPI review dashboard.</p><span class="tag">Dashboard · HR</span></div>
+      <div class="card"><h3>Daily Checklist</h3><p>Daily operational checklist for branch staff.</p><span class="tag">Web app · operations</span></div>
+      <div class="card"><h3>Sosmed Analyst</h3><p>Content-plan tracker with a status workflow for the content team.</p><span class="tag">Web app · marketing</span></div>
+      <div class="card"><h3>Investment Payback Model</h3><p>Break-even and payback projection for new investments.</p><span class="tag">Finance model</span></div>
+    </div>
+    <p class="note">These are private business systems. Screenshots and live demos are available on request.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <h2>Skills</h2>
+    <div><h3>Development</h3><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">Zustand</span><span class="chip">PWA</span><span class="chip">Google Apps Script</span><span class="chip">Sheets automation</span><span class="chip">Dashboards</span></div></div>
+    <div><h3>Hosting &amp; data</h3><div class="chips"><span class="chip">Linux VPS</span><span class="chip">aaPanel</span><span class="chip">Production deploys</span><span class="chip">Domain &amp; SSL</span><span class="chip">Supabase</span><span class="chip">PostgreSQL</span><span class="chip">Migrations</span><span class="chip">Backups</span></div></div>
+    <div><h3>Business</h3><div class="chips"><span class="chip">HPP &amp; menu pricing</span><span class="chip">Break-even &amp; payback</span><span class="chip">Cash-basis bookkeeping</span><span class="chip">Budget (RAB) review</span><span class="chip">Content planning</span></div></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>What people say</h2>
+    <blockquote><p>“Payroll and KPI reviews are now much easier to finish.”</p><cite>Joan, HR, Elio Group</cite></blockquote>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Kurniawan · Malang, Indonesia (GMT+7) · <a href="mailto:iwan.kapatualang123@gmail.com">iwan.kapatualang123@gmail.com</a><br>
+    B.Eng. Electrical Engineering, Universitas Muhammadiyah Malang (2016) · Open to remote, part-time and freelance work.
+  </div>
+</footer>
+</body>
+</html>
